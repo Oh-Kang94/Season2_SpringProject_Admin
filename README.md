@@ -15,9 +15,6 @@ okh19941994@naver.com 에 문의하세요.
 ---
 
 ### 기능 설명
-- Image용 서버를 따로 두어 관리
-![image](https://github.com/Okrie/NutriDelight_Spring/assets/24921229/5ec0d9ea-758e-41ae-9cc6-3e71d7dad4ec)
-    
 - 일반 로그인, 소셜 로그인 기능 구현    
    일반 유저라면 홈페이지 메인 페이지로 이동
    어드민이라면 어드민 메인 페이지로 이동    
