@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.springlec.base.dao.user.NUserDao">
+	<insert id="userRegisterDao">
+		INSERT INTO user 
+		(userid, userpw, name, gender, birthdate, telno, address, email, allergy, insertdate, invalidate) 
+		VALUES (#{userid}, #{userpw}, #{name}, #{gender}, #{birthdate}, #{telno}, #{address}, #{email}, #{allergy}, now(), 1)
+	</insert>
+	<select id="userCheckDao">
+		SELECT COUNT(*) FROM user WHERE userid = #{userid}
+	</select>
+	<select id="adminCheckDao" resultType="int">
+		SELECT COUNT(*) FROM admin WHERE adminid = #{adminid}
+	</select>
+	<select id="userLoginDao">
+		SELECT COUNT(*) FROM user WHERE userid = #{userid} AND userpw = #{userpw}
+	</select>
+	<select id="adminLoginDao">
+		SELECT COUNT(*) FROM admin WHERE adminid = #{adminid} AND adminpw = #{adminpw}
+	</select>
+	<select id="userisAliveDao" resultType="String">
+		SELECT invalidate FROM user WHERE userid = #{userid}
+	</select>
+	<select id="userInfoDao" resultType="com.springlec.base.model.user.NUserLoginDto">
+		SELECT * FROM user WHERE userid = #{userid}
+	</select>
+	<select id="userMypageCheckDao">
+		SELECT COUNT(*) FROM user WHERE userid = #{userid} AND userpw = #{userpw}
+	</select>
+	<update id="userMypageUpdateDao">
+		UPDATE user 
+		SET name = #{name}, telno = #{telno}, birthdate = #{birthdate}
+		, address = #{address}, email = #{email}, allergy = #{allergy} 
+		WHERE userid = #{userid}
+	</update>
+	<!--<select id="userMypageOrderedDao" resultType="com.springlec.base.model.product.NOrderDto">
+		SELECT o.ordercode, pr.photo, pr.name, o.count, m.price, o.orderdate, o.deliverydate, o.refunddate, pr.pcode 
+		FROM user u 
+		JOIN orders o ON u.userid = o.userid 
+		JOIN product pr ON o.pcode = pr.pcode 
+		JOIN manage m ON pr.pcode = m.pcode 
+		WHERE u.userid = #{userid}
+	</select>
+	<insert id="userAddCartDao">
+		INSERT INTO cart (userid, pcode, count) VALUES(#{userid}, #{pcode}, 1)
+	</insert> -->
+</mapper>
