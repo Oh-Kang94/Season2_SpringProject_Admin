@@ -12,6 +12,7 @@
 	<groupId>com.springlec</groupId>
 	<artifactId>Season2_Team4_Main_Spring_Admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging> <!-- 이 부분을 추가 또는 수정하세요 -->
 	<name>Season2_Team4_Main_Spring_Admin</name>
 	<description>Season2_Team4_Main_Spring_Admin for Spring Boot</description>
 	<properties>
@@ -22,6 +23,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- JDBC -->

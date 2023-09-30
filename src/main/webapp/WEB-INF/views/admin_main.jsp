@@ -120,12 +120,12 @@
 											<div class="row no-gutters align-items-center">
 												<div class="col-auto">
 													<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-														${percenttodo }%</div>
+														100%</div>
 												</div>
 												<div class="col">
 													<div class="progress progress-sm mr-2">
 														<div class="progress-bar bg-info" role="progressbar"
-															style="width: ${percenttodo }%" aria-valuenow="50"
+															style="width: 100" aria-valuenow="50"
 															aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
 												</div>
