@@ -34,7 +34,7 @@ Spring 제작 기간 - (2023-06-19 ~ 2023-06-21)
 #### 기술 스택
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,eclipse,vscode,mysql,java,spring,css,html,figma,bootstrap," />
+    <img src="https://skillicons.dev/icons?i=git,github,eclipse,vscode,mysql,java,spring,css,html,figma,bootstrap,aws,docker" />
   </a>
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png" height="53" title="Java Script">
     <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_jsp_icon_130498.png" height="53" title="JSP">
