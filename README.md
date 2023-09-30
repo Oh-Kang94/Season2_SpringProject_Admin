@@ -4,9 +4,8 @@ Java MVC패턴으로 제작했던 프로젝트를 Spring Boot로 이식
 Java MVC 제작 기간 - (2023-05-29 ~ 2023-06-13)    
 Spring 제작 기간 - (2023-06-19 ~ 2023-06-21)
 ------
-웹 앱 구동을 위해서는 , application.properties가 필요합니다. 
-okh19941994@naver.com 에 문의하세요.
-            
+<a href="http://www.oh-kang.kro.kr:14331/" title="PDF로 이동">배포된 사이트로 이동하기 </a> 
+-----
 <a href="https://drive.google.com/file/d/12uAAQJZRKFMwtNNqIZEAAXQS_lZILKH0/view?usp=share_link" title="PDF로 이동">![cover](https://github.com/Okrie/NutriDelight_Spring/blob/main/Nutridelight_Spring.png)</a> 
 
 ### 시연 영상
